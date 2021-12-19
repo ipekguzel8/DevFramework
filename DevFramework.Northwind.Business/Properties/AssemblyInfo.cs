@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using DevFramework.Core.Aspect.Postsharp.PerformanceAspects;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,6 +14,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly:PerformanceCounterAspect(2,AttributeTargetTypes= "DevFramework.Northwind.Business.Concrete.Managers.*")]
 
 // ComVisible özniteliğinin false olarak ayarlanması bu bütünleştirilmiş koddaki türleri
 // COM bileşenleri için görünmez yapar. Bu bütünleştirilmiş koddaki bir türe
